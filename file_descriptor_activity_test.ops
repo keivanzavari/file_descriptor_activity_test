@@ -1,0 +1,4 @@
+import("file_descriptor_activity_test")
+loadComponent("Test", "FileDescriptorActivityTest")
+Test.port = 20000
+Test.start()
