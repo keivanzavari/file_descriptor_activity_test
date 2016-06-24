@@ -46,12 +46,13 @@ public:
         //         sockfd_ = 0;
         //         return false;
         //     }
-        if (fda_) { 
-
+        server_.reset(new UDPServer(addr_, port_));
+        // if (fda_) { 
+            
             fda_->watch(server_->sockfd_); 
             // optional, set a timeout in milliseconds 
             fda_->setTimeout(1000); 
-        }
+        // }
 
 
         // struct sockaddr_in bind_address;
