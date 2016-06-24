@@ -1,4 +1,6 @@
 import("file_descriptor_activity_test")
 loadComponent("Test", "FileDescriptorActivityTest")
 Test.port = 20000
-Test.start()
+Test.addr = "127.0.0.1"
+//Test.start()
+Test.configure()
